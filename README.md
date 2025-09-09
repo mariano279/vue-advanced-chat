@@ -702,7 +702,7 @@ messageSelectionActionHandler({ roomId, action, message }) {
 }
 ```
 
-**(9)** `room-info` is the result of the [`room-info-enabled`](#props-api) prop.<br>
+**(9)** `room-info` is the result of the [`room-info-enabled`] prop.<br>
 
 **(10)** `textarea-action-handler` is the result of the [`textarea-action-enabled`] prop.<br>
 
