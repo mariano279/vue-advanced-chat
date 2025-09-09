@@ -229,7 +229,7 @@ Otherwise, you need to pass those props as strings. For example: `[messages]="JS
 
 **(5)** `load-first-room` can be used to remove the default behaviour of opening the first room at initialization
 
-**(6)** `custom-search-room-enabled` can be used to use the [search-room](#events-api) event to call your own method to filter out rooms
+**(6)** `custom-search-room-enabled` can be used to use the [search-room] event to call your own method to filter out rooms
 
 **(7)** `room-message` can be used to add a default textarea value
 
@@ -238,7 +238,7 @@ Otherwise, you need to pass those props as strings. For example: `[messages]="JS
 **(9)** `messages-loaded` must be set to `true` when all messages of a conversation have been loaded. Meaning the user cannot scroll on top to load more paginated messages
 
 **(10)** `room-actions` can be used to display your own buttons when clicking the dropdown icon of each room inside the rooms list.<br>
-You can then use the [room-action-handler](#events-api) event to call your own action after clicking a button. Ex:
+You can then use the [room-action-handler] event to call your own action after clicking a button. Ex:
 
 ```javascript
 room-actions="[
@@ -250,7 +250,7 @@ room-actions="[
 ```
 
 **(11)** `menu-actions` can be used to display your own buttons when clicking the vertical dots icon inside a room.<br>
-You can then use the [menu-action-handler](#events-api) event to call your own action after clicking a button. Ex:
+You can then use the [menu-action-handler] event to call your own action after clicking a button. Ex:
 
 ```javascript
 menu-actions="[
@@ -270,7 +270,7 @@ menu-actions="[
 ```
 
 **(12)** `message-actions` can be used to display your own buttons when clicking the dropdown icon inside a message.<br>
-You can then use the [message-action-handler](#events-api) event to call your own action after clicking a button. Ex:
+You can then use the [message-action-handler] event to call your own action after clicking a button. Ex:
 
 ```javascript
 message-actions="[
@@ -653,7 +653,7 @@ menuActionHandler({ roomId, action }) {
 }
 ```
 
-**(5)** `menu-action-handler` is the result of the [`menu-actions`](#props-api) prop.<br>
+**(5)** `menu-action-handler` is the result of the [`menu-actions`] prop.<br>
 When clicking a button from your `menu-actions` array, `menu-action-handler` will give you the name of the button that was click.
 Then you can do anything you want with it. Ex:
 
