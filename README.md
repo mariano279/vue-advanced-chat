@@ -1,23 +1,4 @@
-<p align="center">
-  <a href="https://github.com/advanced-chat/vue-advanced-chat/actions/workflows/release.yml"><img src="https://img.shields.io/github/actions/workflow/status/advanced-chat/vue-advanced-chat/release.yml?branch=main"></a>
-  <a href="https://www.npmjs.com/package/vue-advanced-chat"><img src="https://img.shields.io/npm/dm/vue-advanced-chat.svg"></a>
-  <a href="https://www.npmjs.com/package/vue-advanced-chat"><img src="https://img.shields.io/bundlephobia/minzip/vue-advanced-chat"></a>
-  <a href="https://www.npmjs.com/package/vue-advanced-chat"><img src="https://img.shields.io/npm/v/vue-advanced-chat.svg"></a>
-  <a href="https://www.npmjs.com/package/vue-advanced-chat"><img src="https://img.shields.io/npm/l/vue-advanced-chat.svg"></a>
-</p>
-
 # vue-advanced-chat
-
-![Demo Image](demo/src/assets/web_mobile.png)
-
-## Sponsors
-
-<div align="center">
-  <a target="_blank" href="https://chatkitty.com">
-    <img alt="ChatKitty sponsor" src="demo/src/assets/sponsors/chatkitty.png" width="220">
-  </a>
-  <div>Easy to use <a target="_blank" href="https://chatkitty.com">chat API/Server</a> with scalable infrastructure</div>
-</div>
 
 ## Features
 
@@ -35,11 +16,7 @@
 - Firestore example
 - Typescript, PWA, Web Component support
 
-## [Demo](https://advanced-chat.github.io/vue-advanced-chat)
-
 Enjoy :smile:
-
-## [Real World Example](https://vue-advanced-chat-app.netlify.app/)
 
 A Progressive Web Application showcasing all the features of `vue-advanced-chat` component.<br>
 Built with Firestore, Vuetify, and Push Notifications.
@@ -64,18 +41,6 @@ You will get a fully working chat application for web and mobile:
 
 <br>
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#example)
-- [Props API](#props-api)
-- [Props data structure](#props-data-structure)
-- [Events API](#events-api)
-- [Named Slots](#named-slots)
-- [Using with Firestore](#using-with-firestore)
-
-<br>
-
 ## Installation
 
 ```bash
@@ -85,13 +50,9 @@ npm install --save vue-advanced-chat
 # Using yarn
 yarn add vue-advanced-chat
 
-# Using CDN
-<script src="https://cdn.jsdelivr.net/npm/vue-advanced-chat@2.0.4/dist/vue-advanced-chat.umd.js"></script>
-```
-
 ### Vue
 
-Register `vue-advanced-chat` and `emoji-picker` as web components in your [config file](https://vuejs.org/guide/extras/web-components.html#example-vite-config):
+Register `vue-advanced-chat` and `emoji-picker` as web components in your [config file]
 
 ```javascript
 compilerOptions: {
@@ -100,18 +61,6 @@ compilerOptions: {
   }
 }
 ```
-
-Demo: https://github.com/advanced-chat/vue-advanced-chat-sandbox/tree/main
-
-### React
-
-Demo: https://github.com/advanced-chat/vue-advanced-chat-sandbox/tree/react
-
-### Angular / Ionic
-
-Demo: https://github.com/advanced-chat/vue-advanced-chat-sandbox/tree/angular
-
-<br>
 
 ## Usage
 
@@ -213,7 +162,7 @@ fetchMessages({ room, options }) {
 
 ### Important notes
 
-If you are using Vue 3, you can pass Array and Object props normally: [Passing DOM Properties in Vue 3](https://vuejs.org/guide/extras/web-components.html#passing-dom-properties)
+If you are using Vue 3, you can pass Array and Object props normally: [Passing DOM Properties in Vue 3]
 <br>
 Otherwise, you need to pass those props as strings. For example: `[messages]="JSON.stringify(messages)"`
 
@@ -470,10 +419,10 @@ multiline code
 ```
 
 **(21)** `room-info-enabled` can be used to trigger an event after clicking the room header component.<br>
-You can then use the [room-info](#events-api) event to call your own action after clicking the header.
+You can then use the [room-info] event to call your own action after clicking the header.
 
 **(22)** `textarea-action-enabled` can be used to add an extra icon on the right of the textarea<br>
-You can then use the [textarea-action-handler](#events-api) event to call your own action after clicking the icon.
+You can then use the [textarea-action-handler] event to call your own action after clicking the icon.
 
 **(23)** `responsive-breakpoint` can be used to collapse the rooms list on the left when then viewport size goes below the specified width.
 
@@ -487,11 +436,11 @@ You can then use the [textarea-action-handler](#events-api) event to call your o
 
 Example: set `accepted-files="image/png, image/jpeg, application/pdf"` to allow `JPG` `PNG` and `PDF` files only
 
-**(28)** `capture-files` can be used to enable direct capturing of photos and videos on mobile browsers, as opposed to just uploading existing photos and videos which are already on the device. See [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/capture) for more information and recognized values. By default, the attribute is omitted and mobile browsers will only offer the gallery to choose photos and videos. Note: this only affects file attachments. Audio messages are always recorded using the device's microphone.
+**(28)** `capture-files` can be used to enable direct capturing of photos and videos on mobile browsers, as opposed to just uploading existing photos and videos which are already on the device. See [here] for more information and recognized values. By default, the attribute is omitted and mobile browsers will only offer the gallery to choose photos and videos. Note: this only affects file attachments. Audio messages are always recorded using the device's microphone.
 
 **(29)** `multiple-files` can be used to define whether multiple file selections will be accepted. By default this is true.
 
-**(30)** `styles` can be used to customize your own theme. You can find the full list [here](src/themes/index.js)
+**(30)** `styles` can be used to customize your own theme. You can find the full list [here]
 
 **(31)** `show-audio` can be used to enable or disable audio icon 
 
@@ -688,10 +637,10 @@ messages="[
 <usertag>TAGGED_USER_ID</usertag>
 ```
 
-This will make the tag clickable inside a message. Ex: [message tag content](#messages-collection-inside-a-room-document)<br>
+This will make the tag clickable inside a message. Ex: [message tag content]<br>
 `send-message` and `edit-message` events will handle that pattern for you and pass it in the `content` param.
 
-**(4)** `room-action-handler` is the result of the [`room-actions`](#props-api) prop.<br>
+**(4)** `room-action-handler` is the result of the [`room-actions`] prop.<br>
 When clicking a button from your `room-actions` array, `room-action-handler` will give you the name of the button that was click.
 Then you can do anything you want with it. Ex:
 
@@ -721,9 +670,9 @@ menuActionHandler({ roomId, action }) {
 }
 ```
 
-**(6)** `search-room` can be enabled by using [`custom-search-room-enabled`](#props-api) prop. This will allow you to call your own method to filter out searched rooms.
+**(6)** `search-room` can be enabled by using [`custom-search-room-enabled`] prop. This will allow you to call your own method to filter out searched rooms.
 
-**(7)** `message-action-handler` is the result of the [`message-actions`](#props-api) prop.<br>
+**(7)** `message-action-handler` is the result of the [`message-actions`] prop.<br>
 When clicking a button from your `message-actions` array, `message-action-handler` will give you the name of the button that was click and the corresponding message data.
 Then you can do anything you want with it. Ex:
 
@@ -738,7 +687,7 @@ messageActionHandler({ roomId, action, message }) {
 }
 ```
 
-**(8)** `message-selection-action-handler` is the result of the [`message-selection-actions`](#props-api) prop.<br>
+**(8)** `message-selection-action-handler` is the result of the [`message-selection-actions`] prop.<br>
 When clicking a button from your `message-selection-actions` array, `message-selection-action-handler` will give you the name of the button that was click and the corresponding selected messages data.
 Then you can do anything you want with it. Ex:
 
@@ -755,7 +704,7 @@ messageSelectionActionHandler({ roomId, action, message }) {
 
 **(9)** `room-info` is the result of the [`room-info-enabled`](#props-api) prop.<br>
 
-**(10)** `textarea-action-handler` is the result of the [`textarea-action-enabled`](#props-api) prop.<br>
+**(10)** `textarea-action-handler` is the result of the [`textarea-action-enabled`] prop.<br>
 
 **(11)** Array of files where each file contain: `{ blob, localUrl, name, size, type, extension }`
 
@@ -855,7 +804,7 @@ You can find the source code to implement a full featured chat app using Firebas
 To test it using your own Firebase project:
 
 - Setup Cloud Firestore (to store users and rooms) and Realtime Database (to store users online status)
-- Clone this repository: `git clone https://github.com/advanced-chat/vue-advanced-chat.git`
+- Clone this repository: `git clone https://github.com/mariano279/vue-advanced-chat.git`
 - Inside `demo/src/database/index.js` file, replace the line `const config = ...` by your own Firebase config
 - Go inside `demo` folder and run `npm run serve`
 
@@ -916,10 +865,4 @@ messages: {
 
 <br>
 
-## [Contributing](https://github.com/advanced-chat/vue-advanced-chat/blob/master/.github/CONTRIBUTING.md)
-
 Your help is always appreciated :rocket:
-
-## License
-
-This project is licensed under [MIT License](http://en.wikipedia.org/wiki/MIT_License)
